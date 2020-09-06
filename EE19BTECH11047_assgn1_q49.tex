@@ -1,0 +1,49 @@
+\documentclass{beamer}
+\usetheme{Madrid}
+
+\title{Control Systems}
+\subtitle{Assignment 1}
+\author{Chirag Jain \\ EE19BTECH11047}
+\centering
+\date{6 September 2020}
+
+\begin{document}
+\maketitle
+
+\begin{frame}{Question}
+Q49. A system’s output, c, is related to the system’s input,
+r, by the straight-line relationship, c = 5r + 7. Is the
+system linear?
+\end{frame}
+
+\begin{frame}{Solution}
+
+\begin{itemize}
+    \item We know that a linear system has two properties \textbf{\textit{superposition}} and \textbf{\textit{homogeneity}}.
+    \item {Checking for superposition:}
+    \begin{itemize}
+        \subitem $\bullet$ {For an input \(r_1\) , the system's output is \(c_1\) = \(5r_1\) + 7.}\\
+        \subitem $\bullet$ {For an input \(r_2\) , the system's output is \(c_2\) = \(5r_2\) + 7.}\\
+        \subitem $\bullet$ {For an input \(r_1\) + \(r_2\) , the system's output is 5(\(r_1\) + \(r_2\)) + 7.}\\
+    \end{itemize}
+    \item As per the property of superposition, if an input of \(r_1\) yields an output of \(c_1\) and an input of \(r_2\) yields an output of \(c_2\), then an input of \(r_1\) + \(r_2\) yields an output of \(c_1\) + \(c_2\).\\
+    \item We can observe that, \(c_1\) + \(c_2\) = 5(\(r_1\) + \(r_2\)) + 14 , which is not equal to the input (\(r_1\) + \(r_2\)).
+    \item Hence we see that the given system does not follow principle of superposition.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Solution}
+\begin{itemize}
+   \item {Checking for homogeneity:}
+    \begin{itemize}
+        \subitem $\bullet$ {For an input \(r_1\) , the system's output is \(c_1\) = \(5r_1\) + 7.}\\
+        \subitem $\bullet$ {For an input \(Ar_1\) , the system's output is \(c_1\) = \(5Ar_1\) + 7.}\\
+    \end{itemize}
+    \item As per the property of homogeneity, if for an input of \(r_1\) that yields an output of \(c_1\), an input of \(Ar_1\) yields an output of \(Ac_1\).\\
+    
+    \item We can observe that, for the input \(Ar_1\), the output (5A\(r_1\) + 7) is not equal to \(Ac_1\) which is  [A(\(5r_1\) + 7)].
+    \item Hence we see that the given system does not follow principle of homogeneity.\\
+    \item Thus we can say that the given system is \textbf{not Linear}.
+\end{itemize}
+\end{frame}
+\end{document}
